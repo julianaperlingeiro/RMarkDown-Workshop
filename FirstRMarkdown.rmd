@@ -1,0 +1,51 @@
+---
+title: Investigate Customer Buying Patterns
+author: Juliana Perlingeiro
+date: 03/04/2019
+output: html_document
+---
+
+install.packages('rmarkdown')
+library(rmarkdown)
+library(reader)
+
+
+# This is a header
+
+I'm a paragraph, hi! I can do cool thinks like:
+
+* *Be in italics*
+* Be **Bold**
+* Or be ~~wrong~~
+
+Below is a code chunk
+
+```{r}
+# Load the data inside your system
+data <- read.csv("C:/Users/Ju e Victor/Desktop/Data Analytics/Blackwell_Hist_Sample.csv")
+
+# Show the summary of the data
+summary(data)
+
+```
+The iris dataset has `r nrow(iris)` observations. 
+```{r}
+# Creating an histogram of the age
+hist(data$age)
+
+```
+```{r}
+# Creating an histogram of the age
+hist(data$age)
+
+
+```
+```{r}
+# Creating an histogram of the age
+plot(data$age)
+
+
+```
+
+`r min(data$age)`
+`r max(data$age)`
